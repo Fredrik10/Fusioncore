@@ -70,7 +70,9 @@ h1{
     transition: margin-left .5s;
     padding: 16px;
 }
-
+.logo {
+    
+}
 
 
 @media screen and (max-height: 450px) {
