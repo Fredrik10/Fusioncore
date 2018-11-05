@@ -32,19 +32,3 @@ ul.topnav li.right {float: right;}
 h1{
     margin-bottom: -80px;
 }
-.buttonav{
-
-    background-color: grey;/*Grey*/
-    border: none;
-    color: blue;
-    padding: 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    cursor: pointer;
-    
-}
-
-
-.button1, .button2{border-radius:12px;}
