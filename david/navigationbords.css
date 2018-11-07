@@ -3,6 +3,7 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    background-image: url("Background.png")
 }
 h1{
     margin-bottom: -80px;
@@ -39,7 +40,7 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #00FFFF;
+    background-image: url("Background.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -78,4 +79,7 @@ h1{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.demo{
+    margin-left: 500px;
 }
