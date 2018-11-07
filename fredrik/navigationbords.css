@@ -3,6 +3,7 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    background-image: url(Background.png)
 }
 h1{
     margin-bottom: -80px;
