@@ -12,17 +12,15 @@
 <script type="text/javascript" src="buttons.js"></script>
 </head>
 <body>
-
+      <h1>Fusioncore</h1>
           <?php
           Require "../templates/menu.php";
           Require "../templates/masthead.php";
           ?>
-        
-  <h1>About Us</h1>
+        <a href = "./"><img class = "logo" alt = "Startsidan" src ="fusioncore.png"/></a>
 
   <?php
-Require "../templates/footer.php";
-?>
+  Require "../templates/footer.php";
+  ?>
 </body>
-
 </html>

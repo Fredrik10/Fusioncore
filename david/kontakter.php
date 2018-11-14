@@ -18,11 +18,6 @@
           Require "../templates/masthead.php";
           ?>
         
-  <h1>About Us</h1>
-
-  <?php
-Require "../templates/footer.php";
-?>
+  <h1>Contact Us</h1>
 </body>
-
 </html>

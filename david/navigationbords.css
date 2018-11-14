@@ -6,7 +6,8 @@ body {
     background-image: url("Background.png")
 }
 h1{
-    margin-bottom: -80px;
+    color: pink;
+    /*margin-bottom: 80px;*/
 }
 .buttonav {
     background-color: black; /* Green */
@@ -31,8 +32,6 @@ h1{
     text-decoration: none;
     color: white;
 }
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -40,7 +39,7 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url("Background.png");
+    background-image: url("Sidenav.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
