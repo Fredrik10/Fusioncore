@@ -1,3 +1,6 @@
+<?php
+header('Content-type: text/css; charset: UTF-8');
+?>
 @charset "utf-8";
 
 body {
@@ -38,7 +41,7 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url("Background.png");
+    background-image: url("Sidenav.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -85,7 +88,7 @@ input[type=text],input[type = password]{
 } 
 button{
     background-color: #4ACF50;
-    color: white;
+    color: red;
     padding: 14px 18px;
     margin: 8px 0;
     cursor: pointer;
