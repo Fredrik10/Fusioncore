@@ -4,10 +4,9 @@
 ?>
 
 <header> 
-    <div class = "hwrap">
-        
-        <button id = "login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-</div>
+    
+<button id = "login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
