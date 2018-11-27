@@ -2,5 +2,5 @@
 
 ?>
 <footer>
-    <small>&copy;Fredrik, David och Alex AB </small>
+    <small><strong>&copy;Fredrik, David och Alex AB </small>
 </footer>

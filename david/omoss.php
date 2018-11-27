@@ -15,10 +15,13 @@
           <?php
           Require "../templates/menu.php";
           Require "../templates/masthead.php";
+          
           ?>
         
   <h1>About Us</h1>
-
+  <?php
+  Require "../templates/om-oss-templates.php";
+  ?>
   <?php
 Require "../templates/footer.php";
 ?>
