@@ -1,81 +1,43 @@
 <?php 
 
 ?>
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Fusion Core</title>
-<script type="text/javascript" src="buttons.js"></script>
-</head>
 <body>
-<link rel="stylesheet" href="navigationbords.php">
-  <?php
-  require "masthead.php";
-  require "menu.php";
-  ?>
-      <p>
-        Hej! Jag heter Mia och tycker om att göra hemsidor. Jag har bloggat under en längre tid men
-        blev nyfiken på hur jag själv skulle kunna bygga en blogg. Hur svårt kunde det egentligen vara?
-        Hur mycket var jag tvungen att lära mig?
-      </p>
-      <p>
-        Just nu sitter jag här och och skapar koder samtidigt som jag ser hur bloggen växer fram.
-        Det är en spännande utmaning och inte alls så svårt som jag först trodde. Jag känner mig så stolt.
-      </p>
-      <p>
-        Om du vill ha hjälp med <strong>svenska, engelska, spanska eller samhällsämnena</strong> då
-        står jag gärna till tjänst.
-      </p>
-   
-      <p>
-        Mitt namn är Per, men jag kallas för Pelle. Mina vänner säger att jag är en riktig webbnörd
-        och det stämmer nog. Jag trivs bakom dataskärmen och att knacka html-koder.
-      </p>
-      <p>
-        Det är en hel del att lära sig men det som är bra är att det finns färdiga koder att utgå
-        ifrån. Jag tror man lär sig lättare då, och det blir enklare att komma ihåg. Åtminstone var
-        det så för mig.
-      </p>
-      <p>
-        Om det är hjälp med <strong>matte, fysik, kemi och biologi</strong> du vill ha, då är det
-        mest jag som kommer att hjälpa dig. De andra är inte dåliga, men jag är allt strået vassare!
-      </p>
-    
-      <p>
-        Hejsan! Jag tycker om att teckna och designa. Och så gillar jag att vara social på nätet.
-        Min dröm är att bli webbdesigner men alla sa att det är jättesvårt för man måste läsa i många år och vara bra på matte.</p>
-      <p>
-        Jag upptäckte att det inte alls var så svårt. Har man bara intresse och bra handledning så
-        lyckas man. Det är viktigt med en bra och tydlig pedagogik för de som är nybörjare. Det fick jag här.
-        Och nu är jag på väg att bli en webbdesigner.
-      </p>
-      <p>
-       Om du vill ha hjälp med <strong>samhällsämnena, fotografering och bildbehandling eller design</strong> då
-       kommer jag snabbt som ögat!
-      </p>
-    
-      <p>
-        Hej, Johan här! Jag siktar på att bli programmerare i framtiden. I början hade jag lite
-        problem med HTML och CSS, exempelvis varför koderna såg ut som de gjorde, men när man
-        förklarade det för mig så föll alla bitar på sin plats och jag förstod. Nu finns det inget roligare än att koda!
-      </p>
-      <p>
-        Jag ångrar inte att jag började med det här trots att jag var rädd för att misslyckas. Man
-        lär sig förstå vad man gör samtidigt som man gör det.
-      </p>
-      <p>
-        Jag kan visa dig <strong>hur du använder datorn för att plugga</strong>, men jag hjälper dig
-        också gärna med <strong>engelska, teknik och matte</strong>.
-   
 
+<div class = "container">
+  <img src = "King.jpg" alt = "Avatar" style= "width:90px">
+  <p>
+My name is Fredrik, I am soon 
+to be 18 years of age so I can make my 
+own life long decisions about what I want in life. 
+Me and my own sibling David (not the person below)we 
+were born in Sweden but my parents and other relatives 
+came to this country as foreigners and now must of them are 
+citizens. What interest me the most in school is math, physics
+ and obviously P.E. But what I enjoy to do on my spare time is to play
+  some PS4, watch a movie/TV-show and spend time with my loved ones.</p>
+</div>
 
-<?php
-Require "footer.php";
-?>
+<div class = "container">
+  <img src = "" alt = "Avatar" style= "width:90px">
+ <p> My name is David I am 18 years of age, I come from 
+  the country of Bolivia, a small country in south america.
+   I can speak Swedish, Spanish, English fluently and I have 
+   moved to Sweden with my parents. What interest me the most
+    what my own hobbies are, I am a gamer that usually likes 
+    to play horror games and shooter games. If I could spend
+     the whole day in bed...I would.</p>
+</div>
 
-            
+<div class = "container">
+  <img src = "" alt = "Avatar" style= "width:90px">
+ <p> My name is Alex, I am already 19 years of age,
+    I was born in the land where vikings existed a long time ago.
+     I was born in Sweden and it’s here I grew up with my family
+      and also my two sisters. What I am interested in has had my attention
+       since my childhood and that’s pokemon other interests are animation
+        and modeling (game characters).
+</p>
+</div>
+          
 </body>
 </html>

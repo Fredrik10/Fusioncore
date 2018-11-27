@@ -165,3 +165,30 @@ span.psw{
 margin-bottom:1%;
 float: right;
 }
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+.container::after{
+    content:"";
+    clear: both;
+    display:table;
+}
+.container img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+@media(max-width: 500px){
+    .container{
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
