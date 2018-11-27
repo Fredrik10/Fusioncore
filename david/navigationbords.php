@@ -43,7 +43,7 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url("Sidenav2.png");
+    background-image: url("Sidenav3.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
