@@ -18,7 +18,7 @@ citizens. What interest me the most in school is math, physics
 </div>
 
 <div class = "container">
-  <img src = "" alt = "Avatar" style= "width:90px">
+  <img src = "Monokid.png" alt = "Avatar" style= "width:90px">
  <p> My name is David I am 18 years of age, I come from 
   the country of Bolivia, a small country in south america.
    I can speak Swedish, Spanish, English fluently and I have 
@@ -29,7 +29,7 @@ citizens. What interest me the most in school is math, physics
 </div>
 
 <div class = "container">
-  <img src = "" alt = "Avatar" style= "width:90px">
+  <img src = "AxlPFP.png" alt = "Avatar" style= "width:90px">
  <p> My name is Alex, I am already 19 years of age,
     I was born in the land where vikings existed a long time ago.
      I was born in Sweden and it’s here I grew up with my family
