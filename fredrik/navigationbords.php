@@ -7,6 +7,7 @@ body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     background-image: url("Background.png")
+    
 }
 h1{
     margin-bottom: -80px;
@@ -14,7 +15,7 @@ h1{
 .buttonav {
     background-color: black; /* Green */
     border: none;
-    color: white;
+    color: #111;
     padding: 13px;
     text-align: center;
     text-decoration: none;
@@ -72,8 +73,10 @@ h1{
     padding: 16px;
 }
 .logo {
-    
+
 }
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -108,11 +111,16 @@ button:hover{
     position: relative;
 }
 img.avatar{
-    width: 20%;
+    width: 22%;
     border-radius: 50%;
 }
+h1{
+    text-align: center;
+    margin-bottom: 70px;
+    color: white;
+}
 .container{
-    padding: 16px;
+padding: 22px;
 }
 span.psw{
     float: right;

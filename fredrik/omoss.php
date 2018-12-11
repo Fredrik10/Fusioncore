@@ -21,6 +21,7 @@ require"../templates/masthead.php";
  
 <?php
 require"../templates/om-oss-templates.php";
+require"../templates/footer.php";
 ?>
 
 </body>
