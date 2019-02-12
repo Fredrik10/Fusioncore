@@ -10,7 +10,7 @@ body {
     
 }
 h1{
-    margin-bottom: -80px;
+    margin-bottom: 1%;
 }
 .buttonav {
     background-color: black; /* Green */
@@ -119,9 +119,6 @@ h1{
     margin-bottom: 70px;
     color: white;
 }
-.container{
-padding: 22px;
-}
 span.psw{
     float: right;
     padding-top: 16px;
@@ -176,9 +173,11 @@ float: right;
 .container {
     border: 1px solid #c54;
     background-color: #eee;
-    border-radius: 2px;
-    padding: 4px;
     margin: 4px 0;
+    width : 40%;
+    padding: 10px;
+    margin-left: 25%;
+    
 }
 .container::after{
     content:"";

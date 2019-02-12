@@ -32,5 +32,10 @@ require"../templates/masthead.php";
 
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eligendi nesciunt fuga! Ipsa cum amet quam. Quaerat mollitia minus sit reiciendis cumque earum accusantium, nam soluta, rem possimus omnis reprehenderit.</p>
     
+<?php
+
+require"../templates/footer.php";
+?>
+
 </body>
 </html>
