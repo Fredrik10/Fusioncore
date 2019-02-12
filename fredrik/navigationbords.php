@@ -174,11 +174,11 @@ margin-bottom:1%;
 float: right;
 }
 .container {
-    border: 2px solid #ccc;
+    border: 1px solid #c54;
     background-color: #eee;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
 }
 .container::after{
     content:"";
@@ -190,6 +190,16 @@ float: right;
     margin-right: 20px;
     border-radius: 50%;
 }
+.TextBox{
+    border: 1px solid #c54;
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
+    width: 50%;
+    margin-left: 340px;
+    height: 100%;
+}
 @media(max-width: 500px){
     .container{
         text-align: center;
@@ -199,4 +209,5 @@ float: right;
         float: none;
         display: block;
     }
+    
 }
