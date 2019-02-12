@@ -1,9 +1,13 @@
+<?php
+header('Content-type: text/css; charset: UTF-8');
+?>
 @charset "utf-8";
 
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     background-image: url("Background.png")
+    
 }
 h1{
     margin-bottom: -80px;
@@ -11,7 +15,7 @@ h1{
 .buttonav {
     background-color: black; /* Green */
     border: none;
-    color: white;
+    color: #111;
     padding: 13px;
     text-align: center;
     text-decoration: none;
@@ -69,8 +73,10 @@ h1{
     padding: 16px;
 }
 .logo {
-    
+
 }
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -85,7 +91,7 @@ input[type=text],input[type = password]{
 } 
 button{
     background-color: #4ACF50;
-    color: white;
+    color: red;
     padding: 14px 18px;
     margin: 8px 0;
     cursor: pointer;
@@ -105,12 +111,16 @@ button:hover{
     position: relative;
 }
 img.avatar{
-    width: 20%;
+    width: 22%;
     border-radius: 50%;
 }
+h1{
+    text-align: center;
+    margin-bottom: 70px;
+    color: white;
+}
 .container{
-    padding: 16px;
-    
+padding: 22px;
 }
 span.psw{
     float: right;
@@ -162,4 +172,42 @@ span.psw{
 #login{
 margin-bottom:1%;
 float: right;
+}
+.container {
+    border: 1px solid #c54;
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
+}
+.container::after{
+    content:"";
+    clear: both;
+    display:table;
+}
+.container img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.TextBox{
+    border: 1px solid #c54;
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
+    width: 50%;
+    margin-left: 340px;
+    height: 100%;
+}
+@media(max-width: 500px){
+    .container{
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    
 }

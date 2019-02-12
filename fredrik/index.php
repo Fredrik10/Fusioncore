@@ -13,16 +13,10 @@
 </head>
 <body>
 <link rel="stylesheet" href="navigationbords.php">
-<?php
+  <?php
 require"../templates/menu.php";
 require"../templates/masthead.php";
 ?>
-  <h1>About Us</h1>
- 
-<?php
-require"../templates/om-oss-templates.php";
-require"../templates/footer.php";
-?>
-
+  <h1> Homepage</h1>
 </body>
 </html>
