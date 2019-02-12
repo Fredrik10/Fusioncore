@@ -1,22 +1,21 @@
 <?php
 header('Content-type: text/css; charset: UTF-8');
 ?>
-
 @charset "utf-8";
 
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     background-image: url("Background.png")
+    
 }
 h1{
-    color: pink;
-    /*margin-bottom: 80px;*/
+    margin-bottom: -80px;
 }
 .buttonav {
     background-color: black; /* Green */
     border: none;
-    color: white;
+    color: #111;
     padding: 13px;
     text-align: center;
     text-decoration: none;
@@ -48,18 +47,17 @@ h1{
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: white;
+    color: #111;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: red;
+    color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -75,7 +73,7 @@ h1{
     padding: 16px;
 }
 .logo {
-    
+
 }
 
 
@@ -92,8 +90,8 @@ input[type=text],input[type = password]{
     box-sizing: border-box;
 } 
 button{
-    background-color:  red;
-    color: white;
+    background-color: #4ACF50;
+    color: red;
     padding: 14px 18px;
     margin: 8px 0;
     cursor: pointer;
@@ -113,11 +111,16 @@ button:hover{
     position: relative;
 }
 img.avatar{
-    width: 20%;
+    width: 22%;
     border-radius: 50%;
 }
+h1{
+    text-align: center;
+    margin-bottom: 70px;
+    color: white;
+}
 .container{
-    padding: 16px;
+padding: 22px;
 }
 span.psw{
     float: right;
@@ -150,8 +153,7 @@ span.psw{
     font-size: 35px;
     font-weight: bold;
 }
-.close:hover,
-.close:focus{
+.close:hover,.close:focus{
     color: red;
     cursor: pointer;
 }
@@ -170,4 +172,42 @@ span.psw{
 #login{
 margin-bottom:1%;
 float: right;
+}
+.container {
+    border: 1px solid #c54;
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
+}
+.container::after{
+    content:"";
+    clear: both;
+    display:table;
+}
+.container img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.TextBox{
+    border: 1px solid #c54;
+    background-color: #eee;
+    border-radius: 2px;
+    padding: 4px;
+    margin: 4px 0;
+    width: 50%;
+    margin-left: 340px;
+    height: 100%;
+}
+@media(max-width: 500px){
+    .container{
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    
 }

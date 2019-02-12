@@ -12,15 +12,25 @@
 </head>
 <body>
 <link rel="stylesheet" href="navigationbords.php">
-      <h1>Fusioncore</h1>
-          <?php
-          Require "../templates/menu.php";
-          Require "../templates/masthead.php";
-          ?>
-        <a href = "./"><img class = "logo" alt = "Startsidan" src ="fusioncore.png"/></a>
+ <?php
+require"../templates/menu.php";
+require"../templates/masthead.php";
+?>
+  
+ 
+  <img class="logo" src="fusioncore.png" alt="fusioncore logo">
 
-  <?php
-  Require "../templates/footer.php";
-  ?>
+
+
+  <ul class = "buttonav button1">
+    <li><a class = "link1" href = "highscore.html">HighScore</a></li>
+    </ul>
+
+    <ul class= "buttonav button2">
+        <li><a class = "link1" href = "classes.html">Classes</a></li>
+    </ul>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eligendi nesciunt fuga! Ipsa cum amet quam. Quaerat mollitia minus sit reiciendis cumque earum accusantium, nam soluta, rem possimus omnis reprehenderit.</p>
+    
 </body>
 </html>

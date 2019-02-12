@@ -12,11 +12,15 @@
 </head>
 <body>
 <link rel="stylesheet" href="navigationbords.php">
-          <?php
-          Require "../templates/menu.php";
-          Require "../templates/masthead.php";
-          ?>
-        
-  <h1>Contact Us</h1>
+  <?php
+require"../templates/menu.php";
+require"../templates/masthead.php";
+?>
+  <h1> Contact</h1>
+
+  <?php
+  require"../templates/kontakter-templates.php";
+  require"../templates/footer.php";
+  ?>
 </body>
 </html>

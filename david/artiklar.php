@@ -12,11 +12,10 @@
 </head>
 <body>
 <link rel="stylesheet" href="navigationbords.php">
-          <?php
-          Require "../templates/menu.php";
-          Require "../templates/masthead.php";
-          ?>
-        
+<?php
+require"../templates/menu.php";
+require"../templates/masthead.php";
+?>
   <h1>Patch Notes</h1>
 </body>
 </html>
