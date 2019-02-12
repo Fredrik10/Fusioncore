@@ -9,8 +9,10 @@ body {
     background-image: url("Background.png")
     
 }
-h1{
-    margin-bottom: 1%;
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
 }
 .buttonav {
     background-color: black; /* Green */
@@ -72,15 +74,8 @@ h1{
     transition: margin-left .5s;
     padding: 16px;
 }
-.logo {
-
-}
 
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 input[type=text],input[type = password]{
     width:100%;
     padding: 14px 18px;
@@ -106,13 +101,11 @@ button:hover{
     background-color: #f44336;
 }
 .imgcontainer{
-    text-align: center;
-    margin: 24px 0 12px 0;
+    margin-left: 42%;
     position: relative;
 }
 img.avatar{
-    width: 22%;
-    border-radius: 50%;
+    width: 15%;
 }
 h1{
     text-align: center;
@@ -132,8 +125,8 @@ span.psw{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color:rgb(0,0,0);
-    background-color: rgba(0,0,0,0,4);
+    background-color:rgb(15,30,30);
+    
     padding-top: 60px;
 }
 .modal- content{
@@ -192,12 +185,10 @@ float: right;
 .TextBox{
     border: 1px solid #c54;
     background-color: #eee;
-    border-radius: 2px;
-    padding: 4px;
-    margin: 4px 0;
-    width: 50%;
-    margin-left: 340px;
-    height: 100%;
+    padding: 2px;
+    width: 36%;
+    margin-left: 30%;
+    
 }
 @media(max-width: 500px){
     .container{

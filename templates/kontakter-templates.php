@@ -48,7 +48,7 @@
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">  
+  <input type="submit" value="Submit"> <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
  </td>
 </tr>
 </table>
