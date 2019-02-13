@@ -34,5 +34,5 @@
     </div>
   </form>
 </div>
-<hr/>
+
 </header>

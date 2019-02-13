@@ -31,8 +31,6 @@ h1{
     text-decoration: none;
     color: white;
 }
-
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -40,12 +38,11 @@ h1{
     z-index: 1;
     top: 0;
     left: 0;
-    background-image: url("Background.png");
+    background-image: url("Sidenav.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -74,8 +71,6 @@ h1{
 .logo {
     
 }
-
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -115,6 +110,7 @@ img.avatar{
 }
 .container{
     padding: 16px;
+    
 }
 span.psw{
     float: right;
@@ -147,8 +143,7 @@ span.psw{
     font-size: 35px;
     font-weight: bold;
 }
-.close:hover,
-.close:focus{
+.close:hover,.close:focus{
     color: red;
     cursor: pointer;
 }
