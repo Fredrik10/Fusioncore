@@ -6,7 +6,7 @@ header('Content-type: text/css; charset: UTF-8');
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-image: url("Background.png")
+    background-image: url("Background.png");
     
 }
 h2{
@@ -188,7 +188,12 @@ float: right;
     padding: 2px;
     width: 36%;
     margin-left: 30%;
+    background-image: url("Background.png");
+    background-blend-mode: multiply;
     
+}
+.footers{
+ text-align: center;
 }
 @media(max-width: 500px){
     .container{
