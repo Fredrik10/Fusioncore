@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
-    $email_subject = "Your email subject line";
+    $email_to = "support@poke.ntisod.se";
+    $email_subject = "Ticket Support";
  
     function died($error) {
         // your error code can go here
@@ -95,6 +95,8 @@ require"../templates/menu.php";
 require"../templates/masthead.php";
 ?>
   <h1> Ticket Sent!</h1>
+  <h2> Your support ticket was successfully sent, we'll reply as soon as we can </h2>
+  <h2> Wish to send another ticket? </h2>
 
 
 
