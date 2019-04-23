@@ -12,6 +12,7 @@ require "../includes/global.inc.php";
 //Pos 0
 require "../includes/users.php";
 
+
 $dbh = get_dbh();
 
 if ( empty($_SESSION['username']) && empty($_POST) ){
@@ -30,7 +31,7 @@ elseif ( empty($_SESSION['username']) ){
     
     if ( $login_ok )
     {
-        
+        echo "position1";
         session_regenerate_id(true);
         $_SESSION['username'] = $username;
 
@@ -48,28 +49,32 @@ elseif ( empty($_SESSION['username']) ){
         $admintitle = "Administration av Fusioncore";
         $adminbody = "adminpanel";
     } else {
+        echo "position2";
         $h1span = "Logga in";
         $admintitle = "Logga in som admin på Fusioncore";
         $adminbody = "loginform";
         $login_username = htmlspecialchars($username, ENT_QUOTES);
         $login_errormsg = "<p class=\"error\">Inloggningen misslyckades. Orsak: {$errormsg}.</p>";
-       exit;
+      
     }
 } elseif (empty($_POST) )
 {
+    echo "position3";
     echo "<h2>Inloggad som {$_SESSION['username']}</h2>";
     echo "<p><a href=\"logout.php\">Logga Ut</p>";
-    exit;
+    
     
 }
 else {
     if ( isset($_POST['new password']) )
     {
+        echo "position4";
         exit ("Position 4 kod ej skriven ännu");
     } else {
+        echo "position5";
         echo "<h2>Inloggad som {$_SESSION['username']}</h2>";
         echo "<p><a href=\"logout.php\">Logga Ut</p>";
-        exit;
+       
     }
 }
 
