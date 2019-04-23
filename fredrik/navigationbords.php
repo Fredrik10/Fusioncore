@@ -6,19 +6,9 @@ header('Content-type: text/css; charset: UTF-8');
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-image: url("Background.png");   
+    background-image: url("Background.png");
+    
 }
-.logo{
-    height:65%;
-    width: 60%;
-    margin-left: 21%;
-}
-.container img {
-        margin: auto;
-        float: none;
-        display: block;
-    }
-
 h2{
     text-align: center;
     margin-bottom: 30px;
@@ -36,25 +26,17 @@ h2{
     margin: 4px 2px;
     cursor: pointer;
 }
-.container1{
-
-border: 1px solid #c54;
-    background-color: #eee;
-    width : 50%;
-    padding: 10px;
-    margin-left: 25%;
-
-}
 .button1, .button2 {
     margin-top: 5%;
-    margin-left: 44%;
+    margin-left: 25%;
     border-radius: 12px;
     list-style: none;
+    
 }
 .link1 {
     text-decoration: none;
     color: white;
-    }
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -92,6 +74,8 @@ border: 1px solid #c54;
     transition: margin-left .5s;
     padding: 16px;
 }
+
+
 input[type=text],input[type = password]{
     width:100%;
     padding: 14px 18px;
@@ -209,17 +193,16 @@ float: right;
     
 }
 .footers{
- margin-left: 44%;
+ text-align: center;
 }
-@media(max-width: 400px){
+@media(max-width: 500px){
     .container{
         text-align: center;
     }
-  
-}
-@media(max-width: 1050px){
-    .container{
-        text-align: center;
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
     }
-  
+    
 }
