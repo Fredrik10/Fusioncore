@@ -6,11 +6,23 @@ header('Content-type: text/css; charset: UTF-8');
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-image: url("Background.png")
-    
+    background-image: url("Background.png");   
 }
-h1{
-    margin-bottom: -80px;
+.logo{
+    height:65%;
+    width: 60%;
+    margin-left: 21%;
+}
+.container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
 }
 .buttonav {
     background-color: black; /* Green */
@@ -24,17 +36,25 @@ h1{
     margin: 4px 2px;
     cursor: pointer;
 }
+.container1{
+
+border: 1px solid #c54;
+    background-color: #eee;
+    width : 50%;
+    padding: 10px;
+    margin-left: 25%;
+
+}
 .button1, .button2 {
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 44%;
     border-radius: 12px;
     list-style: none;
-    
 }
 .link1 {
     text-decoration: none;
     color: white;
-}
+    }
 .sidenav {
     height: 100%;
     width: 0;
@@ -72,15 +92,6 @@ h1{
     transition: margin-left .5s;
     padding: 16px;
 }
-.logo {
-
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 input[type=text],input[type = password]{
     width:100%;
     padding: 14px 18px;
@@ -106,21 +117,16 @@ button:hover{
     background-color: #f44336;
 }
 .imgcontainer{
-    text-align: center;
-    margin: 24px 0 12px 0;
+    margin-left: 42%;
     position: relative;
 }
 img.avatar{
-    width: 22%;
-    border-radius: 50%;
+    width: 15%;
 }
 h1{
     text-align: center;
     margin-bottom: 70px;
     color: white;
-}
-.container{
-padding: 22px;
 }
 span.psw{
     float: right;
@@ -135,8 +141,8 @@ span.psw{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color:rgb(0,0,0);
-    background-color: rgba(0,0,0,0,4);
+    background-color:rgb(15,30,30);
+    
     padding-top: 60px;
 }
 .modal- content{
@@ -176,9 +182,11 @@ float: right;
 .container {
     border: 1px solid #c54;
     background-color: #eee;
-    border-radius: 2px;
-    padding: 4px;
     margin: 4px 0;
+    width : 40%;
+    padding: 10px;
+    margin-left: 25%;
+    
 }
 .container::after{
     content:"";
@@ -193,21 +201,25 @@ float: right;
 .TextBox{
     border: 1px solid #c54;
     background-color: #eee;
-    border-radius: 2px;
-    padding: 4px;
-    margin: 4px 0;
-    width: 50%;
-    margin-left: 340px;
-    height: 100%;
+    padding: 2px;
+    width: 36%;
+    margin-left: 30%;
+    background-image: url("Background.png");
+    background-blend-mode: multiply;
+    
 }
-@media(max-width: 500px){
+.footers{
+ margin-left: 44%;
+}
+@media(max-width: 400px){
     .container{
         text-align: center;
     }
-    .container img {
-        margin: auto;
-        float: none;
-        display: block;
+  
+}
+@media(max-width: 1050px){
+    .container{
+        text-align: center;
     }
-    
+  
 }

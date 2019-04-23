@@ -16,6 +16,10 @@
 require"../templates/menu.php";
 require"../templates/masthead.php";
 ?>
-  <h1>Patch Notes</h1>
+  <h1>Patch Notes/Changes</h1>
+  <?php
+  require"../templates/footer.php"; 
+  ?>
+
 </body>
 </html>

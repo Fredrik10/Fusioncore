@@ -18,7 +18,7 @@ require"../templates/masthead.php";
 ?>
   
  
-  <img class="logo" src="fusioncore.png" alt="fusioncore logo">
+  <img class ="logo" src="fusioncore.png" alt="fusioncore logo">
 
 
 
@@ -26,11 +26,13 @@ require"../templates/masthead.php";
     <li><a class = "link1" href = "highscore.html">HighScore</a></li>
     </ul>
 
-    <ul class= "buttonav button2">
-        <li><a class = "link1" href = "classes.html">Classes</a></li>
-    </ul>
-
+         
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eligendi nesciunt fuga! Ipsa cum amet quam. Quaerat mollitia minus sit reiciendis cumque earum accusantium, nam soluta, rem possimus omnis reprehenderit.</p>
     
+<?php
+
+require"../templates/footer.php";
+?>
+
 </body>
 </html>

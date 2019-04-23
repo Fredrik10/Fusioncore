@@ -18,6 +18,8 @@ require"../templates/masthead.php";
 ?>
   <h1> Contact</h1>
 
+
+
   <?php
   require"../templates/kontakter-templates.php";
   require"../templates/footer.php";
