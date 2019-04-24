@@ -1,6 +1,8 @@
 
-<?php
-define('DB_NAME','fusincore');
-define('DB_USERNAME','Fredrik');
-define('DB_PASSWORD','Davidhatarmig');
-define('TZ','+2:00'); 
+<?php 
+define ('DB_NAME', 'fusincore');
+define ('DB_USERNAME','phpuser');
+define ('DB_PASSWORD', 'GameOfThrones8');
+define ('TZ','+2:00');
+
+?>

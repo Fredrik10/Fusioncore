@@ -1,9 +1,10 @@
+
 <?php
-// $CURLOCALE = setlocale( FIXME );
-/*if ( ! strlen($CURLOCALE) ) {
-    user_error('Locale inte inställd!', E_USER_WARNING);
-}
-*/
+ // $CURLOCALE = setlocale( FIXME );
+//if ( ! strlen($CURLOCALE) ) {
+    //user_error('Locale inte inställd!', E_USER_WARNING);
+//}
+
 
 /**
  * Funktion för att ansluta till en databas
@@ -27,7 +28,7 @@ function get_dbh()
     static $dbh;
     if ( is_null($dbh) ) {
         // Kontroll av "parametrar"
-        $dsn    = "mysql:host=localhost;dbname=". DB_NAME . ";charset=utf8";
+        $dsn    = "mysql:host=localhost;dbname=" . DB_NAME . ";charset=utf8";
 
         // Lite grundläggande inställningar
         $attributes = array(
@@ -35,37 +36,36 @@ function get_dbh()
             PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
             PDO::ATTR_DEFAULT_FETCH_MODE       => PDO::FETCH_ASSOC
         );
-      try {
-        $dbh = new PDO($dsn, DB_USERNAME,DB_PASSWORD,$attributes);
-        if(empty($dbh)){
-throw new Exception("PDO kunde inte instansieras, uppkoppling misslyckad
-0,z bvc.");
-        }
-        $ts_sql = "SET time_zone ='".TZ."'";
-        $svar = $dbh->query($ts_sql);
+        try {
+            $dbh = new PDO($dsn, DB_USERNAME, DB_PASSWORD, $attributes);
+            if (empty($dbh)) {
+                throw new Exception("PDO kunde instansieras, uppkoppling misslyckad.");
+            }
             // FIXME
-
+            $ts_sql = "SET time_zone = '" . TZ . "'";
+            $svar = $dbh->query($ts_sql); 
             // Lite inställningar för MySQL,
             // se https://kb.askmonty.org/en/sql_mode/
             // Tolerera INGA fel under utveckling, bli generösare under drift.
             // OBS! Inget mellanrum mellan kommatecknen på raden nedan!
             $mode_sql = "SET SESSION sql_mode = 'STRICT_ALL_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE'";
-            $svar= $dbh->query($mode_sql);
+            $svar     = $dbh->query($mode_sql);
 
             // Idiotsäkra förbindelsen så att vi inte råkar
             // radera eller uppdatera alla poster av misstag
             // eller hämts på tok för mycket data
             // FIXME
-            $safe_sql = "SET sql_safe_updates=1,sql_select_limit=1000,max_join_size=1000000";
+            $safe_sql = "SET sql_safe_updates=1, sql_select_limit=1000, max_join_size=1000000";
             $svar = $dbh->query($safe_sql);
+            
         }
         catch(Exception $e) {
             // FIXME
-            echo"<pres>";
+            echo "<pre>";
             var_dump($e);
-            echo"<hr />";
-            var_dump($dbh->errorInfo());
-            echo"<hr />";
+            echo "<hr />";
+            var_dump($dbh ->errorInfo());
+            echo "<hr />";
             exit;
         }
     }

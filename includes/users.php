@@ -1,26 +1,22 @@
-<?php 
-/**
- * 
- */
+<?php
+
 class users
 {
     public static function verify_login($username, $password, PDO $dbh, &$errorinfo)
     {
-        $sql = "SELECT password FROM users  WHERE username=:username";
+        $sql = "SELECT password FROM users WHERE username = :username";
         $stmt = $dbh->prepare($sql);
-        $stmt -> bindParam(":username", $username);
+        $stmt->bindParam(":username", $username);
         $stmt->execute();
-        $hash =$stmt->fetchColumn();
-        if(empty($hash)){
-            $errorinfo =" Felaktig användarnamn";
+        $hash = $stmt->fetchColumn();
+        if ( empty($hash) ) {
+            $errorinfo = "Felaktigt användarnamn";
             return false;
         }
-        if(!password_verify($password, $hash)){
-            $errorinfo = "Felaktig lösenord";
+        if ( !password_verify($password, $hash ) ) {
+            $errorinfo = "Felaktigt lösenord";
             return false;
         }
         return true;
-    
     }
 }
-?>
