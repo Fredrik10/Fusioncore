@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -18,5 +18,10 @@ require"../templates/menu.php";
 require"../templates/masthead.php";
 ?>
   <h1> Homepage</h1>
+
+  <?php
+require"../templates/footer.php";
+
+  ?>
 </body>
 </html>

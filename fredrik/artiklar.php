@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -18,4 +18,5 @@ require"../templates/masthead.php";
 ?>
   <h1>Patch Notes</h1>
 </body>
+<?php require"../templates/footer.php"; ?>
 </html>
