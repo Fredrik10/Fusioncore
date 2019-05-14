@@ -31,7 +31,7 @@ elseif ( empty($_SESSION['username']) ){
     
     if ( $login_ok )
     {
-        echo "position1";
+        
         session_regenerate_id(true);
         $_SESSION['username'] = $username;
 
