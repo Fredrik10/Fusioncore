@@ -79,7 +79,18 @@ function get_dbh()
  * @param PDO $dbh        Databasanslutningen att använda
  * @return Array          Kommentarerna
  */
-function fetch_blog_comments($articlesID, $dbh)
+function fetch_blog_comments($articleID, $dbh)
 {
-    // FIXME
+ $sql = "SELECT * FROM comments WHERE articlesID = :aid ORDER BY ctime ASC";
+ $stmt = $dbh->prepare($sql);
+ $stmt->bindParam("aid", $articleID);
+ $stmt->execute();
+ $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
+ 
+ foreach ($comments as &$cmt) {
+        $cmt['name'] = htmlspecialchars($cmt['name'], ENT_QUOTES);
+        $cmt['text'] = htmlspecialchars($cmt['text'], ENT_QUOTES);
+            // FIXME
+}
+return $comments;
 }

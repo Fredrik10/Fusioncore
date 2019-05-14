@@ -195,6 +195,15 @@ float: right;
 .footers{
  text-align: center;
 }
+.boxlogin{
+    width: 10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.usernames, .passwords {
+    width: 300px;
+    text-align: center;
+}
 @media(max-width: 500px){
     .container{
         text-align: center;
