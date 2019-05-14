@@ -1,22 +1,42 @@
 <?php
+
+
 session_start();
-?>
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Fusion Core</title>
-<script type="text/javascript" src="buttons.js"></script>
-</head>
-<body>
-<link rel="stylesheet" href="navigationbords.php">
-<?php
-require"../templates/menu.php";
-require"../templates/masthead.php";
-?>
-  <h1>Patch Notes</h1>
-</body>
-<?php require"../templates/footer.php"; ?>
-</html>
+// En array som innehåller tre fingerade inlägg
+// Varje inlägg är en inre array
+$slug = filter_input(INPUT_GET, 'slug', FILTER_SANITIZE_URL);
+$h1span = "Fusioncore";
+
+require "../includes/settings.php";
+require "../includes/global.inc.php";
+
+$dbh = get_dbh();
+
+if (empty($slug)) {
+    $sql = "SELECT * FROM articles ORDER BY pubdate DESC LIMIT 0,5";
+    $stmt = $dbh->prepare($sql);
+    $stmt -> execute();
+    $template = 'list-blog-posts';
+}
+else {
+    $sql = "SELECT * FROM articles WHERE slug =:slug";
+    $stmt = $dbh->prepare($sql);
+    $stmt->bindParam(":slug", $slug);
+    $stmt->execute();
+    $blogpost = $stmt->fetch();
+
+    if (empty($blogpost)) {
+        header("HTTP/1.0 404 Not Found");
+        $template = 'not-found';
+
+    }
+    else {
+        $comments = fetch_blog_comments($blogpost['articlesID'], $dbh);
+        $template = 'single-blog-post';
+    }
+}
+
+
+header ("Content-type: text/html; charset=utf-8");
+
+require "../templates/{$template}.php";

@@ -62,7 +62,7 @@ elseif ( empty($_SESSION['username']) ){
     echo "position3";
     echo "<h2>Inloggad som {$_SESSION['username']}</h2>";
     echo "<p><a href=\"logout.php\">Logga Ut</p>";
-    exit;
+    
     
 }
 else {
@@ -74,7 +74,7 @@ else {
         echo "position5";
         echo "<h2>Inloggad som {$_SESSION['username']}</h2>";
         echo "<p><a href=\"logout.php\">Logga Ut</p>";
-       exit;
+       
     }
 }
 
