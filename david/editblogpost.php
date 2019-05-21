@@ -3,6 +3,7 @@ session_start();
 if ( empty($_SESSION['username']) ) {
     $_SESSION['referer'] = filter_input(INPUT_SERVER, 'PHP_SELF', FILTER_SANITIZE_URL);
     header("Location: admin.php"); //
+}
    require "../includes/settings.php";
    require "../includes/global.inc.php";
    // require "../includes/artiklar.php";
@@ -33,16 +34,14 @@ if ( empty($_SESSION['username']) ) {
    } else {
        exit("<h1> Kontroller och lagring ej klara ännu</h1>\n");
    }
-   $blogpost['title'] = htmlspecialchars($blogpost['title'], ENT_QUOTES);
-   $blogpost['slug'] = htmlspecialchars($blogpost['slug'], ENT_QUOTES);
-   $blogpost['text'] = htmlspecialchars($blogpost['text'], ENT_QUOTES);
-   $blogpost['username'] = htmlspecialchars($blogpost['username'], ENT_QUOTES);
 
-   $h1span = "Redigera blogginlägg";
-}
+$blogpost['title'] = htmlspecialchars($blogpost['title'], ENT_QUOTES);
+$blogpost['slug'] = htmlspecialchars($blogpost['slug'], ENT_QUOTES);
+$blogpost['text'] = htmlspecialchars($blogpost['text'], ENT_QUOTES);
+$blogpost['username'] = htmlspecialchars($blogpost['username'], ENT_QUOTES);
+
+$h1span = "Redigera blogginlägg";
+
 header("Content-type: text/html; charset=utf-8");
-echo <<<TEMP
-    <h1>Du är inloggad</h1>
-    <p><a href="logout.php">Logga ut</p>
-TEMP;
+require "../templates/form-edit-blog-post.php"; 
 ?>
